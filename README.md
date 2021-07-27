@@ -1,5 +1,10 @@
 # manage-landing-page
-  This project is a single page responsive site.
+This is a single page template that I've coded to practise my frontend skills.
 
-## Design Credit 
+## Using...
+*HTML
+*CSS(Sass)
+
+
+### Design Credit 
    https://www.frontendmentor.io/
