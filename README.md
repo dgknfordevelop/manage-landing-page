@@ -1,5 +1,5 @@
 # manage-landing-page
-This is a single page template that I've coded to practise my frontend skills.
+This is a single page responsive template that I've coded to practise my frontend skills.
 
 ## Using...
 * HTML
