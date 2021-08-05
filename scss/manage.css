@@ -330,8 +330,6 @@ html body #testimonial-container #testimonials .testimonial-box {
   width: 440px;
   height: 300px;
   padding: 20px;
-  -ms-touch-action: pan-x;
-      touch-action: pan-x;
   background-color: #fafafa;
 }
 
