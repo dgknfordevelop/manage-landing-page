@@ -1,7 +1,7 @@
 # manage-landing-page
 This is a single page responsive template that I've coded to practise my frontend skills.
 
-## Using...
+## With...
 * HTML
 * CSS(Sass)
 
