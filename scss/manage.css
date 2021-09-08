@@ -59,14 +59,12 @@ html body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
   height: 100px;
   color: #242d52;
 }
@@ -112,6 +110,18 @@ html body header #navbar ul li:hover {
   }
 }
 
+@media (max-width: 675px) {
+  html body header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body header #navbar {
+    max-width: 100%;
+  }
+}
+
 html body main {
   display: -ms-grid;
   display: grid;
@@ -120,8 +130,9 @@ html body main {
           justify-content: center;
   min-height: 100%;
   margin-top: 65px;
-  -ms-grid-columns: (45%)[2];
-      grid-template-columns: repeat(2, 45%);
+  -ms-grid-columns: (minmax(50px, 600px))[2];
+      grid-template-columns: repeat(2, minmax(50px, 600px));
+  grid-row-gap: 10px;
 }
 
 html body main #start-info-container {
@@ -129,9 +140,9 @@ html body main #start-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -140,19 +151,17 @@ html body main #start-info-container {
 }
 
 html body main #start-info-container #intro-header {
-  margin-top: -40px;
   font-size: 3.5rem;
 }
 
 @media (max-width: 901px) {
   html body main #start-info-container #intro-header {
     font-size: 3.2rem;
-    margin-top: -100px;
   }
 }
 
 html body main #start-info-container button {
-  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 html body main #start-svg-container {
@@ -160,7 +169,8 @@ html body main #start-svg-container {
 }
 
 html body main #start-svg-container img {
-  max-width: 100%;
+  height: 500px;
+  width: 100%;
 }
 
 html body main #center-left-section h1 {
@@ -218,6 +228,12 @@ html body main #center-right-section #feature-content-box .feature-main-info {
     max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 1225px) {
+  html body #start-info-container, html body #center-left-section {
+    margin-left: 25px;
   }
 }
 
