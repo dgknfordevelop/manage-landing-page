@@ -176,11 +176,11 @@ html {
             }
 
             #center-right-section {
-                display: flex;
 
                 #feature-content-box {
                     display: flex;
                     flex-direction: column;
+                    padding-left: 60px;
 
                     .feature-header {
                         display: flex;
@@ -261,7 +261,6 @@ html {
 
                 #center-right-section {
                     #feature-content-box {
-
                         align-items: center;
 
                         .feature-header {

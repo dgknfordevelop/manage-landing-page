@@ -181,12 +181,6 @@ html body main #center-left-section p {
   margin-top: 10px;
 }
 
-html body main #center-right-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 html body main #center-right-section #feature-content-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,6 +189,7 @@ html body main #center-right-section #feature-content-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 60px;
 }
 
 html body main #center-right-section #feature-content-box .feature-header {
